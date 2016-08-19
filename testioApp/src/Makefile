@@ -16,13 +16,17 @@ DBD += testio.dbd
 testio_DBD += base.dbd
 
 # Include dbd files from all support applications:
-testio_DBD += devgpio.dbd
+testio_DBD += devfile.dbd
+testio_DBD += devadc.dbd
 testio_DBD += calcSupport.dbd
 
 # Add all the support libraries needed by this IOC
 testio_LIBS += $(EPICS_BASE_IOC_LIBS)
 testio_LIBS += devfile
+testio_LIBS += devadc
 testio_LIBS += calc
+
+testio_SYS_LIBS += prussdrv
 
 # testio_registerRecordDeviceDriver.cpp derives from testio.dbd
 testio_SRCS += testio_registerRecordDeviceDriver.cpp
