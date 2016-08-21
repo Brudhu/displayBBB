@@ -4,7 +4,7 @@ record(stringout, "$(Sys){DISP}OUT"){
     field(SCAN, "Passive")
     field(OUT, "@1") # Driver t√ pedindo um argumento :(
     field(DOL, "$(Sys){DISP}CALC.SVAL PP")
-    field(OSML, "closed_loop")
+#    field(OSML, "closed_loop")
 }
 
 record(scalcout, "$(Sys){DISP}CALC"){
@@ -23,7 +23,7 @@ record(calcout, "$(Sys){Temp-BBB}OUT"){
     field(PREC, "1")
     field(HOPR, "50")
     field(LOPR, "0")
-    field(HIHI, "36")
+    field(HIHI, "34")
     field(HIGH, "32")
     field(LOW, "12")
     field(LOLO, "8")
